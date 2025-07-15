@@ -15,7 +15,7 @@ todos = functions.get_todos()
 
 st.title("My To-Do List")
 st.subheader("This is your own personal to-do list!")
-st.write("This app's purpose is to increase your productivity.")
+st.write("This app's purpose is to increase your <b>productivity</b>.", unsafe_allow_html=True)
 
 
 for index, todo in enumerate(todos):
