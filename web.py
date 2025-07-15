@@ -13,7 +13,7 @@ def add_todo():
 
 todos = functions.get_todos()
 
-st.title("My Todo App")
+st.title("My To-Do List")
 st.subheader("This is your own personal to-do list!")
 st.write("This app's purpose is to increase your productivity.")
 
