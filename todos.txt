@@ -1,9 +1,8 @@
 wake up
 make breakfast
+clean room
 walk dog
-get ready
-take out the trash
 go to work
+take out trash
 shower
-do laundry
-go to sleep
+sleep
