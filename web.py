@@ -21,7 +21,7 @@ st.write("This app's purpose is to increase your <b>productivity</b>.", unsafe_a
 for index, todo in enumerate(todos):
     checkbox = st.checkbox(todo, key=f"todo_{index}")
     if checkbox:
-        todos.pop(index)
+        removed = todos.pop(index)
         functions.write_todos(todos)
         del st.session_state[f"todo_{index}"]
         st.rerun()
