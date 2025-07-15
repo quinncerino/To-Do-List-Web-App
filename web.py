@@ -9,6 +9,7 @@ def add_todo():
     print(todo)
     todos.append(todo + '\n')
     functions.write_todos(todos)
+    st.session_state["new_todo"] = ""
 
 
 todos = functions.get_todos()
@@ -28,6 +29,6 @@ for index, todo in enumerate(todos):
 
 
 st.text_input(label=" ", label_visibility="collapsed", placeholder="Add a new task...", key='new_todo', on_change = add_todo)
-st.session_state["new_todo"] = ""
+
 
 #st.session_state
