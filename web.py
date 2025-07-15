@@ -28,6 +28,6 @@ for index, todo in enumerate(todos):
 
 
 st.text_input(label=" ", label_visibility="collapsed", placeholder="Add a new task...", key='new_todo', on_change = add_todo)
-
+st.session_state["new_todo"] = ""
 
 #st.session_state
